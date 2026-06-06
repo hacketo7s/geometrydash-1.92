@@ -1,3 +1,5 @@
+// If you're going to compile this, COMPILE AS A DLL!!
+
 #include "MinHook.h"
 #include <Windows.h>
 
