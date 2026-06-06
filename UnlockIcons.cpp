@@ -16,6 +16,11 @@ uintptr_t gameManagerIsIconUnlockedOffset = 0x66b10;
 uintptr_t gameManagerIsColorUnlockedOffset = 0x66df0;
 uintptr_t gdBase;
 
+// MSVC doesn't support using __thiscall directly. So you have to replicate it by using it __fastcall.
+// This works because __thiscall passes the pointer to the object instance to the ecx register and everything else onto the stack
+// While __fastcall passes argument1 and argument2 into the ecx and edx registers respectively
+// We don't need the edx register but __fastcall requires that you pass it so we pass in a dummy void* pointer
+
 bool __fastcall hkUnlockIcons(gd::GameManager* self, void* edx, int key, gd::IconType type) {
     oIsIconUnlocked(self, key, type); 
     
