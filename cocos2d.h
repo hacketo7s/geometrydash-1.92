@@ -2,7 +2,7 @@
 utilized) was too hard
 
 SPECIAL THANKS TO GEODE BINDINGS
-The macros at the end of the file are from HJFod's bindings
+The macros at the end of the file are from HJFod's ccMacros.h
 */
 
 
