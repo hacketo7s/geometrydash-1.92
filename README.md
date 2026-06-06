@@ -5,3 +5,6 @@ Hooks are done with MinHook (https://github.com/TsudaKageyu/minhook)
 SPECIAL THANKS TO GEODE BINDINGS (https://github.com/geode-sdk/bindings/blob/main/bindings/)
 
 ***Code in this repository is in the context of x86***
+
+
+*still adding stuff*
