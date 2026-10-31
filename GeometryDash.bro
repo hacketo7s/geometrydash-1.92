@@ -2343,7 +2343,7 @@ class FMODAudioEngine : cocos2d::CCNode {
 		m_globalChannel->setPaused(true);
 	}
 	TodoReturn pauseEffect(unsigned int);
-	void playBackgroundMusic(gd::string, bool, bool) = win 0x16850;
+	void playBackgroundMusic(FMOD::Channel**, bool, std::string) = win 0x16850;
 	TodoReturn playEffect(gd::string, bool, float, float, float);
 	TodoReturn preloadBackgroundMusic(gd::string);
 	TodoReturn preloadEffect(gd::string);
